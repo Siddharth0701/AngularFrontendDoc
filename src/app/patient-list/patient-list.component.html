@@ -1,0 +1,9 @@
+<h2>Patient</h2>
+<div>
+    <div *ngFor ="let patient of patients">
+        <p>
+            Patients:{{patient.name}} is beign treated by {{patient.doctor.name}} for {{patient.summary}}
+        </p>
+    </div>
+</div>
+<a routerLink="/add-patient">Add Patient</a>
